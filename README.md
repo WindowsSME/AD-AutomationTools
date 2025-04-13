@@ -42,3 +42,8 @@ Ensure you test in a lab before applying changes in production.
 
 ## Contributions
 Have your own AD scripts? Feel free to fork, add, and open a pull request.
+
+---
+
+## License
+MIT License
