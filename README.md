@@ -6,20 +6,29 @@ PowerShell scripts for managing and auditing Active Directory environments. Thes
 
 ## Included Scripts
 
-### [Delete-ADComputers.ps1](./Delete-ADComputers.ps1)
-Identifies and removes inactive or stale computer objects from AD.
+- [Delete-AD-Computers.ps1](./Delete-AD-Computers.ps1)  
+  Identifies and removes inactive or stale computer objects from Active Directory.
 
-### [Move-ADComputers.ps1](./Move-ADComputers.ps1)
-Automatically moves computers to target OUs based on name or criteria.
+- [Delete-ADComputers.ps1](./Delete-ADComputers.ps1)  
+  Alternative version for removing obsolete computer accounts — keep only one if redundant.
 
-### [Get-AllADOUs.ps1](./Get-AllADOUs.ps1)
-Exports a list of all Organizational Units (OUs) in the AD domain.
+- [Disable-ADAccounts.ps1](./Disable-ADAccounts.ps1)  
+  Disables AD user accounts based on last logon or custom criteria.
 
-### [OUChecker.ps1](./OUChecker.ps1)
-Validates the existence and structure of key OUs in the domain.
+- [GPO-get-targeted-data.ps1](./GPO-get-targeted-data.ps1)  
+  Extracts GPO-linked object data to identify targeted users, groups, or OUs.
 
-### [GPO-get-targeted-data.ps1](./GPO-get-targeted-data.ps1)
-Pulls GPO-targeted settings or linked objects for analysis.
+- [Get-AllADOUs.ps1](./Get-AllADOUs.ps1)  
+  Retrieves a list of all Organizational Units (OUs) in the domain.
+
+- [Get-AndDeleteDisabledADUsers.ps1](./Get-AndDeleteDisabledADUsers.ps1)  
+  Finds and optionally deletes user accounts that are disabled or inactive.
+
+- [OUChecker.ps1](./OUChecker.ps1)  
+  Checks for the presence of expected OUs and validates basic AD structure.
+
+- [Reset-ADAccountsPW.ps1](./Reset-ADAccountsPW.ps1)  
+  Resets passwords for multiple AD user accounts in bulk based on input.
 
 ---
 
