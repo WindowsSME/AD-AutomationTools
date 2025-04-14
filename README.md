@@ -6,29 +6,37 @@ PowerShell scripts for managing and auditing Active Directory environments. Thes
 
 ## Included Scripts
 
-- [Delete-AD-Computers.ps1](./Delete-AD-Computers.ps1)  
-  Identifies and removes inactive or stale computer objects from Active Directory.
+### User & Account Info
 
-- [Delete-ADComputers.ps1](./Delete-ADComputers.ps1)  
-  Alternative version for removing obsolete computer accounts — keep only one if redundant.
+- [Get-LastLoggedUser.ps1](./Get-LastLoggedUser.ps1)  
+  Returns the most recent interactive user login — useful for tracking device ownership or troubleshooting.
 
-- [Disable-ADAccounts.ps1](./Disable-ADAccounts.ps1)  
-  Disables AD user accounts based on last logon or custom criteria.
+- [Get-LocalUsers.ps1](./Get-LocalUsers.ps1)  
+  Lists all local user accounts on the system along with status indicators.
 
-- [GPO-get-targeted-data.ps1](./GPO-get-targeted-data.ps1)  
-  Extracts GPO-linked object data to identify targeted users, groups, or OUs.
+### Hardware & Device Info
 
-- [Get-AllADOUs.ps1](./Get-AllADOUs.ps1)  
-  Retrieves a list of all Organizational Units (OUs) in the domain.
+- [Get-Monitor-Serial.ps1](./Get-Monitor-Serial.ps1)  
+  Fetches serial numbers of connected monitors — helpful for physical asset management and inventory.
 
-- [Get-AndDeleteDisabledADUsers.ps1](./Get-AndDeleteDisabledADUsers.ps1)  
-  Finds and optionally deletes user accounts that are disabled or inactive.
+- [Get-WebcamInfo.ps1](./Get-WebcamInfo.ps1)  
+  Detects available webcam devices, identifies if they are internal or external, and includes fallback detection via WMI.
 
-- [OUChecker.ps1](./OUChecker.ps1)  
-  Checks for the presence of expected OUs and validates basic AD structure.
+- [Get-AppID.ps1](./Get-AppID.ps1)  
+  Retrieves the AppID (Application User Model ID) for Windows apps — useful for notifications or taskbar tweaks.
 
-- [Reset-ADAccountsPW.ps1](./Reset-ADAccountsPW.ps1)  
-  Resets passwords for multiple AD user accounts in bulk based on input.
+### System Health & Logs
+
+- [QAChecker.ps1](./QAChecker.ps1)  
+  Performs a series of basic system checks (uptime, disk space, antivirus status, etc.) to verify that the system meets internal QA standards.
+
+- [Get-LogZips.ps1](./Get-LogZips.ps1)  
+  Collects logs from common system locations (Event Logs, WindowsUpdate, etc.), then compresses them for export or escalation.
+
+### Storage Analysis
+
+- [Profile-SpaceCheck.ps1](./Profile-SpaceCheck.ps1)  
+  Scans all user profile folders and reports disk usage, helping identify storage bloat and cleanup candidates.
 
 ---
 
