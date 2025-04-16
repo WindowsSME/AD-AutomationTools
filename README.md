@@ -1,4 +1,4 @@
-# AD-AutomationTools
+# Active Directory Automation Tools
 
 PowerShell scripts for managing and auditing Active Directory environments. These tools are useful for routine maintenance, compliance reporting, and organizational cleanup.
 
