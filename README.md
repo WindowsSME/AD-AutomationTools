@@ -12,7 +12,7 @@ PowerShell scripts for managing and auditing Active Directory environments. Thes
   Identifies and removes inactive or stale computer objects from Active Directory.
 
 - [Delete-ADComputers.ps1](./Delete-ADComputers.ps1)  
-  Alternative version for removing obsolete computer accounts — consider merging or keeping the preferred one.
+  Alternative version for removing obsolete computer accounts.
 
 - [Disable-ADAccounts.ps1](./Disable-ADAccounts.ps1)  
   Disables AD user accounts based on last logon or custom criteria.
