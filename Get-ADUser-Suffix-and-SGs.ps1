@@ -1,6 +1,6 @@
 <#
     .SYNOPSIS
-        Export enabled AD users whose sAMAccountName matches 2 letters + 7 digits + “.suffix”, including their group memberships.
+        Export enabled AD users whose sAMAccountName matches specific format + “.suffix”, including their group memberships.
 
     .DESCRIPTION
         Queries Active Directory for enabled users, filters on sAMAccountName of the form:
