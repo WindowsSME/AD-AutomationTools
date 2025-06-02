@@ -31,6 +31,10 @@ PowerShell scripts for managing and auditing Active Directory environments. Thes
 - [GPO-get-targeted-data.ps1](./GPO-get-targeted-data.ps1)  
   Extracts GPO-linked object data to identify targeted users, groups, or OUs.
 
+- [Get-ADUser-Suffix-and-SGs.ps1](./Get-ADUser-Suffix-and-SGs.ps1)  
+  Extracts enabled AD acccounts with suffixes and their security group memberships.
+
+
 ### Account Management
 
 - [Reset-ADAccountsPW.ps1](./Reset-ADAccountsPW.ps1)  
