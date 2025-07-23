@@ -166,7 +166,7 @@ function Generate-CompliantPassword {
         }
     }
 
-    Write-Host "`n💾 Exporting log to $LogFilePath..." -ForegroundColor Cyan
+    Write-Host "`nExporting log to $LogFilePath..." -ForegroundColor Cyan
     $logData | Export-Csv -Path $LogFilePath -NoTypeInformation -Force
 
     Write-Host "`n Password reset completed. Log saved to:`n$LogFilePath" -ForegroundColor Green
