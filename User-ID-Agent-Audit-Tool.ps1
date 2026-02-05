@@ -135,7 +135,8 @@ $Results = ForEach ($Server in $Servers) {
     }
 }
 
-Write-Host "`n" + ("=" * 40) -ForegroundColor White
+Write-Host "`n"
+Write-Host ("=" * 40) -ForegroundColor White
 Write-Host "         AUDIT SUMMARY" -ForegroundColor White
 Write-Host ("=" * 40) -ForegroundColor White
 $Results | Group-Object ServiceStatus | Select-Object @{Name='Status';Expression={$_.Name}}, Count | Format-Table -AutoSize
